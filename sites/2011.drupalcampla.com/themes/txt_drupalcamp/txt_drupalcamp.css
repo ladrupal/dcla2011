@@ -1,0 +1,2767 @@
+/* @override 
+ *	http://2010.drupalcampla.com/sites/2010.drupalcampla.com/themes/txt_drupalcamp/txt_drupalcamp.css?J
+ *	https://2010.drupalcampla.com/sites/2010.drupalcampla.com/themes/txt_drupalcamp/txt_drupalcamp.css?J
+ *	http://2010.drupalcampla/sites/2010.drupalcampla/themes/txt_drupalcamp/txt_drupalcamp.css?J
+*/
+
+/* $Id: zen.css,v 1.14.2.1 2009/02/13 07:46:04 johnalbin Exp $ */
+
+/*
+* ZEN STYLES
+*
+* This is an example stylesheet. Sub-themes should NOT include the zen/zen.css
+* file, but instead copy this CSS to their own stylesheets.
+*
+* In this stylesheet, we have included all of the classes and IDs from this
+* theme's tpl.php files. We have also included many of the useful Drupal core
+* styles to make it easier for theme developers to see them.
+*
+* Many of these styles are over-riding Drupal's core stylesheets, so if you
+* remove a declaration from here, the styles may still not be what you want
+* since Drupal's core stylesheets are still styling the element. See the
+* drupal6-reference.css file for a list of all Drupal 5.x core styles.
+*
+* In addition to the style declarations in this file, other Drupal styles that
+* you might want to override or augment are those for:
+*
+*   Book Navigation  See line 74  of Zen's drupal6-reference.css file
+*   Forum            See line 197 of Zen's drupal6-reference.css file
+*   Menus            See line 667 of Zen's drupal6-reference.css file
+*   News Aggregator  See line 20  of Zen's drupal6-reference.css file
+*   Polls            See line 287 of Zen's drupal6-reference.css file
+*   Search           See line 320 of Zen's drupal6-reference.css file
+*   User Profiles    See line 945 of Zen's drupal6-reference.css file
+*/
+
+
+/** body **/
+body
+{
+  margin: 0;
+  padding: 0;
+  font: 16px/140% "Trebuchet MS", "Lucida Grande", Lucida, Verdana, sans-serif;
+  color: #242424;
+  background: #453c2d center top;
+}
+
+a {
+  color: #cf6706;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #497492;
+}
+
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 150%;
+  margin-top: 5px;
+}
+
+#wrapper
+{
+  background: url(2011-images/bg-wrapper.gif) center top;
+}
+
+#wrapper-inner-top
+{
+	background: url(2011-images/bg_main.png) repeat-x center top;
+}
+
+#wrapper-inner-bottom
+{
+
+}
+
+#wrapper-inner-footer-top
+{
+
+}
+
+#bottom-right a.view-sponsors {
+  display: block;
+  position: absolute;
+  text-align: right;
+  width: 160px;
+  top: 22px;
+  height: 30px;
+  z-index: 10;
+  font-size: 12px;
+  right: 19px;
+}
+
+#bottom-right a:hover.view-sponsors {
+  color: #fff;
+}
+
+#page
+{
+  background-position: 219px 67px;
+  background-repeat: no-repeat;
+  padding-bottom: 10px;
+}
+
+#page-inner
+{
+  position:relative;
+}
+
+/** header **/
+#header
+{
+  position: relative;
+}
+
+#header-inner
+{
+  position: relative;
+}
+
+#user-navigation
+{
+  float: right;
+  margin-right: 103px;
+  padding-top: 5px;
+
+  color: #fff;
+  background: url(2011-images/target-small.png) no-repeat 0 4px;
+  padding-left: 19px;
+  text-transform: capitalize;
+  font: 12px Georgia, "Times New Roman", Times, serif;
+}
+
+#user-registration-badge.step1
+{
+  width: 85px;
+  height: 115px;
+  position: absolute;
+  right: 0;
+  background: url(2011-images/reg-badge.png) no-repeat;
+  text-indent: -9999em;
+}
+
+#user-registration-badge.step1 a
+{
+  display: block;
+  text-indent: -9999em;
+  height: 80px;
+  margin-top: 0;
+}
+
+#user-registration-badge.step2
+{
+  width: 85px;
+  height: 115px;
+  position: absolute;
+  right: 0;
+  background: url(2011-images/reg-badge-next.png) no-repeat;
+  text-indent: -9999em;
+}
+
+#user-registration-badge.step2 a
+{
+  display: block;
+  text-indent: -9999em;
+  height: 80px;
+  margin-top: 0;
+}
+
+
+#user-registration-badge.step3
+{
+  width: 85px;
+  height: 115px;
+  position: absolute;
+  right: 0;
+  background: url(2011-images/reg-badge-registered.png) no-repeat;
+  text-indent: -9999em;
+}
+
+#user-registration-badge.step3 a
+{
+  display: block;
+  text-indent: -9999em;
+  height: 80px;
+  margin-top: 0;
+}
+
+#user-registration-badge.step4
+{
+  width: 85px;
+  height: 115px;
+  position: absolute;
+  right: 0;
+  background: url(2011-images/reg-badge-not-attending.png) no-repeat;
+  text-indent: -9999em;
+}
+
+#user-registration-badge.step4 a
+{
+  display: block;
+  text-indent: -9999em;
+  height: 80px;
+  margin-top: 0;
+}
+
+#logo-title /* Wrapper for logo, website name, and slogan */
+{
+}
+
+#logo /* Wrapper for logo */
+{
+  position:absolute;
+  top: 55px;
+  left: 0;
+}
+
+#logo a
+{
+  width: 355px;
+  height: 75px;
+  background: url(2011-images/logo.png) no-repeat;
+}
+
+#logo-image /* The actual logo image */
+{
+}
+
+h1#site-name, div#site-name /* The name of the website */
+{
+  margin: 0;
+  font-size: 2em;
+  line-height: 1.3em;
+}
+
+#site-name a:link,
+#site-name a:visited
+{
+  color: #000;
+  text-decoration: none;
+}
+
+#site-name a:hover
+{
+  text-decoration: underline;
+}
+
+#site-slogan /* The slogan (or tagline) of a website */
+{
+}
+
+#header-blocks /* Wrapper for any blocks placed in the header region */
+{
+}
+
+/* TITLES */
+
+#content-header h1.title {
+  color: #383938;
+  padding: 0;
+  font-size: 32px;
+  letter-spacing: -1px;
+}
+
+.h1-wrapper {
+  padding-right: 10px;
+  margin-bottom: 5px;
+}
+
+h2.title,
+h2.pane-title {
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+div#home-featured-sessions h2.title,
+div#home-featured-sessions h2.pane-title
+{
+  padding: 5px;
+  color: #383938;
+  display: inline;
+  margin: 0 0 0 15px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+div#home-featured-sponsor h2.title,
+div#home-featured-sponsor h2.pane-title
+{
+  padding: 5px;
+  color: #FFF;
+  display: inline;
+  margin: 0 0 0 15px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+h3 {
+  background-color: #5f8eae;
+  padding: 5px 7px;
+  color: #fff;
+  font-size: 14px;
+  clear: both;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase;
+  margin: 5px -5px 10px;
+}
+
+.page-drupalchix h3,
+.page-information-venue h3,
+.page-frequently-asked-questions h3 {
+  background-color: #464746;
+}
+
+h4 {
+  color: #383938;
+}
+
+/** main (container for everything else) **/
+#main
+{
+  margin-top: 65px;
+}
+
+.not-front #main
+{
+  background: url(2011-images/bg-content.png) repeat-y;
+  margin: 65px 0 20px;
+}
+
+.not-front.no-sidebars #main
+{
+  margin: 65px 0 20px;
+  background: url(2011-images/bg-trans-white.png) repeat;
+}
+
+#main-inner
+{
+  margin: 0;
+}
+
+/* SHIP */
+
+.panel-row-1 {
+
+}
+
+/* PAIL */
+
+.front .panels-flexible-region-1-row_3_1 .inside  {
+  padding-bottom: 250px;
+  background: url(2011-images/purple-fish.png) no-repeat center bottom;
+  width:380px;
+}
+
+/** content **/
+#content
+{
+	min-height: 500px;
+}
+
+.not-front #content
+{
+  background-image:
+}
+
+.not-front #content-inner
+{
+  padding: 15px;
+}
+
+.with-navbar #content, .with-navbar #sidebar-left, .with-navbar #sidebar-right {
+  margin-top: 25px;
+}
+
+#content-inner
+{
+  position: relative;
+}
+
+#mission /* The mission statement of the site (displayed on homepage) */
+{
+}
+
+#content-top /* Wrapper for any blocks placed in the "content top" region */
+{
+}
+
+#content-header /* Wrapper for breadcrumb, title, messages, tabs, and help */
+{
+}
+
+.breadcrumb /* The path to the current page in the form of a list of links */
+{
+  padding-bottom: 0; /* Undo system.css */
+}
+
+h1.title, /* The title of the page */
+h2.title, /* Block title or the title of a piece of content when it is given in a list of content */
+h3.title /* Comment title */
+{
+  margin: 0;
+}
+
+/* Important messages (status, warning, and error) for the user */
+
+/* div.messages
+* {
+*   display: none;
+* }
+*/
+
+div.status /* Normal priority messages */
+{
+}
+
+div.warning, tr.warning /* Medium priority messages */
+{
+  /* border: 1px solid #f0c020; */ /* Drupal core uses: 1px solid #f0c020 */
+}
+
+div.error, tr.error /* High priority messages. See also the .error declaration below. */
+{
+}
+
+div.tabs /* See also the tabs.css file. */
+{
+  margin-top: 10px;
+}
+
+.help /* Help text on a page */
+{
+  margin: 1em 0;
+}
+
+.more-help-link /* Link to more help */
+{
+  font-size: 0.85em;
+  text-align: right;
+}
+
+#content-area /* Wrapper for the actual page content */
+{
+}
+
+.pager /* A list of page numbers when more than 1 page of content is available */
+{
+  clear: both;
+  margin: 1em 0;
+  text-align: center;
+	font-size: 11px;
+}
+
+.pager a:hover {
+	color: #d06708;
+}
+
+li.pager-current
+{
+  padding: 0;
+	font-size: 14px;
+	color: #396a8c;
+}
+
+.feed-icons /* The links to the RSS or Atom feeds for the current list of content */
+{
+  margin: 1em 0 0;
+}
+
+#content-bottom /* Wrapper for any blocks placed in the "content bottom" region */
+{
+}
+
+/* BOOK MENU HID */
+
+.book-navigation .menu {
+  border-top-style: none;
+  display: none;
+}
+
+.book-navigation .page-links {
+  border-top: 1px dashed #c5c0b8;
+  border-bottom: 1px dashed #c5c0b8;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.book-navigation .page-links a {
+
+}
+
+/* FORUM */
+
+#forum .links {
+  margin-top: 5px;
+}
+
+#forum table {
+  width: 100%;
+}
+
+#forum table {
+  ;
+}
+
+#forum table td {
+  border-bottom: 1px dotted #796e59;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+td.created, td.last-reply {
+  text-align: center;
+  font-size: .9em;
+}
+
+#forum tr td.forum  {
+  background-position: 0 10px;
+}
+
+#forum thead th {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: .8em;
+  letter-spacing: 1px;
+  color: #49697b;
+  border-bottom: 3px solid #497492;
+  border-top: 1px dashed #a0b3c1;
+  padding: 5px 0 3px;
+}
+
+/* @group NAV */
+
+/** navbar **/
+#navbar
+{
+}
+
+#navbar-inner
+{
+}
+
+#search-box /* Wrapper for the search form */
+{
+}
+
+#edit-search-theme-form-1-wrapper label /* Label that says "Search this site:" */
+{
+  display: none;
+}
+
+#primary /* Primary links */
+{
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 25px;
+  right: 100px;
+  z-index: 200;
+}
+
+#primary li
+{
+  padding: 0;
+  margin: 0 3px 0 0;
+  display: block;
+  float: left;
+}
+
+#primary ul li a
+{
+  display: block;
+  width: 100px;
+  height: 36px;
+  background: url(2011-images/main-nav-bttn.png) no-repeat 0 -20px;
+  overflow: hidden;
+  z-index: 15;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0 0;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-style: normal;
+}
+
+#primary ul li a:hover, #primary ul li a.active
+{
+  height: 37px;
+  padding-top: 23px;
+  background-position: 0 -92px;
+}
+
+#secondary /* Secondary links */
+{
+  position: absolute;
+  left: 0;
+  z-index: 100;
+  margin: 0;
+  top: 2px;
+}
+
+#secondary ul li
+{
+  padding: 0;
+}
+
+#secondary ul li a
+{
+  color: #fff;
+  border-right: 1px solid #484948;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+#secondary li.last a
+{
+  border: none;
+}
+
+#secondary ul li a:hover
+{
+  color: #cf6706;
+}
+
+/* @end */
+
+/** sidebar-left **/
+#sidebar-left
+{
+}
+
+#sidebar-left-inner
+{
+}
+
+/** sidebar-right **/
+
+#sidebar-right {
+}
+.with-navbar #sidebar-left, .with-navbar #sidebar-right
+{
+  margin-top: 25px;
+  background: url(images/pail.gif) no-repeat center bottom;
+  padding-bottom: 240px;
+}
+
+#sidebar-right-inner .block-inner
+{
+  color: #fff;
+  padding: 0 15px;
+
+}
+
+#sidebar-right-inner
+ {
+  margin: 0;
+}
+
+#sidebar-right li.leaf {
+  display: block;
+  padding: 0;
+  margin: 0 0 4px;
+}
+
+#sidebar-right li.leaf a, #sidebar-right .field-content a {
+  display: block;
+  padding: 5px;
+  color: #fff;
+  background-color: #36546a;
+}
+
+#sidebar-right li.leaf a:hover, #sidebar-right .field-content a:hover {
+  color: #d06708;
+  background-color: #383938;
+}
+
+#sidebar-right li {
+ list-style: none;
+}
+
+/*#sidebar-right li.leaf.active-trail,*/
+#sidebar-right li.leaf a.active,
+#sidebar-right .field-content a.active {
+  background-color: #373837;
+
+  color: #fff;
+}
+
+#sidebar-right li.leaf.active-trail a.active {
+  color: #fff;
+}
+
+#sidebar-right h2.title {
+  display: none;
+}
+
+#sidebar-right #block-views-attendees-block_3 h2.title, #sidebar-right #block-profile-0 h2.title, #block-views-news-block_1 h2.title {
+  display: block;
+  margin: 0 0 5px;
+  color: #95bdd7;
+  border-top: 1px dashed #5f8eae;
+  padding: 5px 0 0;
+}
+
+#sidebar-right ul.menu {
+  margin-top: 0;
+}
+
+#sidebar-right strong {
+  color: #8fb7d3;
+  font: normal bold 11px "Trebuchet MS", "Lucida Grande", Lucida, Verdana, sans-serif;
+  text-transform: uppercase;
+  background-color: #366281;
+  padding: 2px 5px;
+  display: block;
+  letter-spacing: 1px;
+  margin: 0 0 3px;
+}
+
+#sidebar-right .block-inner .pane-content img {
+  border: 3px solid #7893a4;
+}
+
+#block-block-9  .block-inner {
+	font-style: italic;
+	font-size: 11px;
+	color: #7ea2bb;
+}
+
+/*FOOTER*/
+
+#footer-wrapper {
+  background: url(2011-images/footer-wrapper.jpg) repeat-x center top;
+}
+
+#footer-wrapper-inner {
+  background: url(2011-images/footer2.gif) no-repeat center top;
+}
+
+#footer
+{
+}
+
+#footer-inner
+{
+  padding: 7px;
+  height: 330px;
+}
+
+#footer-message /* Wrapper for the footer message from Drupal's "Site information"
+                   and for any blocks placed in the footer region */
+{
+}
+
+#block-menu-menu-footer {
+  font-size: .8em;
+  text-transform: uppercase;
+}
+
+#bottom
+{
+  padding-bottom: 10px;
+  margin: -13px 0 0;
+}
+
+#bottom .block .pane-content
+{
+  padding-left: 10px;
+  margin-top: -5px;
+}
+
+#bottom-left,
+#bottom-center,
+#bottom-right
+{
+  width: 285px;
+  height: 190px;
+  float:left;
+}
+
+#bottom-left {
+  position: relative;
+  top: 1px;
+}
+
+#bottom-left a.view-all {
+  display: block;
+  position: absolute;
+  font-size: 12px;
+  text-align: right;
+  width: 60px;
+  top: 19px;
+  height: 30px;
+  left: 205px;
+}
+
+#bottom-left a:hover.view-all {
+  color: #fff;
+}
+
+#bottom-center {
+  position: relative;
+}
+
+#bottom-center p a {
+  position: absolute;
+  top: 0;
+  left: 0;
+ /* border: 1px solid #000;*/
+  height: 182px;
+  width: 100%;
+  text-indent: -9999em;
+}
+
+#bottom-right {
+  position: relative;
+}
+
+#bottom-right .views-field-field-sponsor-image-fid {
+  position: absolute;
+  top: 49px;
+  left: 26px;
+  text-align: center;
+  width: 245px;
+  padding: 15px 0;
+  margin: 10px 0 0 -4px;
+  float: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+#bottom-center,
+#bottom-right
+{
+  margin-left: 35px;
+}
+
+#block-menu-menu-footer
+{
+  float: left;
+  margin: 15px 0 0;
+}
+
+#block-menu-menu-footer ul
+{
+  margin: 5px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+#block-menu-menu-footer ul li
+{
+  background: none;
+  list-style: none;
+  float: left;
+  padding: 0;
+}
+
+#block-menu-menu-footer ul li
+{
+  border-left: 1px solid #534c3f;
+  margin-left: 5px;
+  padding-left: 10px;
+}
+
+#block-menu-menu-footer ul li.first
+{
+  border-left: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#block-menu-menu-footer ul li a
+{
+  display: block;
+}
+
+#block-menu-menu-footer ul li a.active, #block-menu-menu-footer ul li a:hover
+{
+  color: #fff;
+}
+
+#block-block-1
+{
+  float:right;
+  margin: 15px 0 0;
+  color: #746253;
+  text-align: right;
+  font-size: 12px;
+	line-height: 1.5em;
+}
+
+/* SESSIONS */
+
+div#home-featured-sessions
+{
+  width: 540px;
+  border-bottom: 3px solid #406582;
+  padding-top: 15px;
+  margin-left: 13px;
+  background-image: url(2011-images/bg-trans-white.png);
+  position: relative;
+}
+
+div#home-featured-sessions .pane-content
+{
+  padding:15px;
+}
+
+div#home-featured-sessions .pane-content .views-row, .view-sessions .views-row
+{
+  border-top: 1px solid #d4e1eb;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  position: relative;
+}
+
+div#home-featured-sessions .pane-content .views-field-teaser, div#home-featured-sessions .pane-content .views-field-tid, div#home-featured-sessions .pane-content .views-field-teaser, div#home-featured-sessions .pane-content .views-field-name,
+.view-sessions .views-field-tid
+{
+  color: #7091a6;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+div#home-featured-sessions .pane-content .views-field-title a,
+.view-sessions .views-field-title a
+{
+  font-size: 18px;
+  color: #473e2c;
+}
+
+div#home-featured-sessions .pane-content .views-field-title a:hover,
+.view-sessions .views-field-title a:hover
+{
+  color: #497492;
+}
+
+div#home-featured-sessions .pane-content .views-field-tid,
+.view-sessions .views-field-tid
+{
+  text-transform: uppercase;
+  font-size: .8em;
+}
+
+.view-sessions .views-field-picture {
+  float: right;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+.view-sessions .views-field-picture img {
+  border: 2px solid #d9d5d2;
+}
+
+.view-sessions {
+  border-bottom: 1px solid #d9d5d2;
+}
+
+.view-sessions .views-row {
+  position: relative;
+  padding-left: 50px;
+  min-height: 75px;
+}
+
+.section-sessions ul.links.inline li {
+  margin-right: 5px;
+}
+
+.view-id-attendees .views-field-picture {
+  float: left;
+  margin-right: 5px;
+}
+
+#sidebar-right .view-id-attendees .views-field-picture a {
+  border-style: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+#sidebar-right .view-id-attendees .views-field-picture {
+  float: left;
+  margin-right: 7px;
+  width: 60px;
+  margin-bottom: 5px;
+}
+
+#sidebar-right .view-id-attendees .views-field-picture img {
+  float: left;
+  border: 2px solid #7893a4;
+  width: 50px;
+  height: 50px;
+}
+
+#sidebar-right .view-sessions .views-field-title a
+{
+  font-size: 16px;
+  color: #cf6706;
+  padding: 0 0 5px;
+}
+
+#sidebar-right .view-sessions .views-field-title a:hover
+{
+
+  color: #497492;
+}
+
+#sidebar-right .view-sessions .field-content a {
+  border-style: none;
+}
+
+#sidebar-right .view-sessions .views-row {
+  border-top-color: #51493b;
+}
+
+#sidebar-right .view-sessions {
+    border-bottom-color: #51493b;
+}
+
+.view-all-sessions {
+  position: absolute;
+  top: 10px;
+  left: 375px;
+  width: 151px;
+  text-align: right;
+}
+
+.submit-session {
+  position: absolute;
+  top: 26px;
+  left: 375px;
+  width: 151px;
+  text-align: right;
+}
+
+.group-session-logistics .form-item {
+  display: block;
+  float: left;
+  width: 100px;
+  margin-right: 15px;
+}
+.group-session-logistics #edit-field-session-notes-0-value-wrapper,
+.group-session-logistics #edit-field-session-computer-value-wrapper {
+  width: 550px;
+}
+#session-node-form .group-session-logistics #edit-field-session-computer-value {
+  width: 300px;
+}
+
+div.field-field-session-notes,
+div.field-field-session-link {
+  clear: both;
+}
+
+
+/* SCHEDULE */
+
+.view-schedule table {
+  margin-top: 0;
+}
+
+.view-schedule table td {
+	padding: 10px;
+}
+
+.view-schedule table td.flagged, .view-schedule table td.not-flagged {
+  padding: 5px 15px;
+}
+
+.view-schedule table td.flagged {
+  background-color: #fff;
+}
+
+.view-schedule table td.not-flagged {
+
+}
+
+.view-schedule table td .title {
+  line-height: 1.2em;
+  margin: 10px 0 0;
+  position: relative;
+  z-index: 10;
+}
+
+.view-schedule table td.flagged .title a {
+  color: #cf6706;
+}
+
+.view-schedule table td.not-flagged .title a {
+  color: #537286;
+}
+
+.view-schedule table td .title {
+  text-transform: uppercase;
+  padding: 0 0 5px;
+}
+
+.view-schedule table td div.time {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #4b6a7e;
+  padding: 0 0 5px;
+}
+
+.view-schedule table th {
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.view-schedule table td .flag-vote {
+  display: block;
+  height: 40px;
+}
+
+.view-schedule table td a.unflag-action {
+  background: url(2011-images/vote-badge-unpick.png) no-repeat center top;
+  display: block;
+  text-indent: -9999px;
+  overflow: hidden;
+  height: 45px;
+}
+
+.view-schedule table td a.flag-action {
+  background: url(images/vote-badge-sm-pick.png) no-repeat center top;
+  text-indent: -9999px;
+  overflow: hidden;
+  display: block;
+  height: 45px;
+}
+.view-schedule table td.track-begin /* beginner track */ {
+  background-color: #a1d3b3; /* light green */
+}
+
+#schedule-header ul {
+  padding: 0 0 10px;
+  margin: 0;
+}
+
+#schedule-header ul li {
+  padding-bottom: 1px;
+}
+
+#schedule-header ul li span {
+  display: block;
+  float: left;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #882a2a;
+  font-weight: bold;
+  padding-top: 2px;
+  text-align: left;
+  padding-right: 5px;
+}
+
+/* VOTE BADGE */
+
+.vote-link {
+  display: block;
+}
+
+.vote-link-wrapper {
+  position: absolute;
+  left: -2px;
+  top: 8px;
+}
+
+.vote-link a {
+  display: block;
+  width: 50px;
+  text-indent: -9999em;
+  overflow: hidden;
+  background: url(2011-images/vote-badge.png) no-repeat;
+  height: 69px;
+}
+
+.vote-link a.flag-action.flag-link-toggle {
+  background: url(2011-images/vote-badge.png) no-repeat;
+}
+
+.vote-link a.unflag-action.flag-link-toggle {
+  background-image: url(2011-images/vote-badge-unpick.png);
+}
+
+.vote-count {
+  position: absolute;
+  z-index: 20;
+  top: 60px;
+  color: #a81f23;
+  cursor: pointer;
+  text-align: center;
+  width: 43px;
+  font: bold 11px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  display:none; /* mike stewart  - removed from display in order to help late submissions */
+}
+
+.views-field-count {
+  display: none;
+}
+
+.vote-link .flag-throbber {
+  display: none;
+}
+
+body.node-type-session .vote-link {
+  height: 70px;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+
+body.node-type-session h1.title {
+  margin-right: 120px;
+  line-height: 26px;
+  margin-top: 5px;
+}
+
+body.node-type-session div.meta {
+  padding-bottom: 20px;
+  color: #75a1be;
+}
+
+body.node-type-session ul.tabs.primary {
+}
+
+/* SPONSORS */
+
+div#home-featured-sponsor
+{
+  width: 380px;
+  padding-top: 15px;
+  border-bottom: 3px solid #406582;
+  position: relative;
+  background-image: url(2011-images/bg-sponsor-front.png);
+}
+
+div#home-featured-sponsor .views-field-field-sponsor-image-fid
+{
+  background-color: #fff;
+  margin: 15px;
+  padding: 5px;
+  text-align: center;
+}
+
+a.sponsorship {
+  display: block;
+  text-align: center;
+  position: absolute;
+  top: 11px;
+  width: 140px;
+  background-color: #a81f23;
+  color: #fff;
+  right: 15px;
+  font: 14px/140% "Trebuchet MS", "Lucida Grande", Lucida, Verdana, sans-serif;
+  padding: 2px 0;
+}
+
+a:hover.sponsorship {
+  background-color: #383938;
+}
+
+form#uc-product-add-to-cart-form-21 {
+  text-transform: uppercase;
+  padding-bottom: 80px;
+}
+
+form#uc-product-add-to-cart-form-21 label{
+  background-color: #7893a4;
+  padding: 5px;
+  color: #fff;
+}
+
+form#uc-product-add-to-cart-form-21 .form-radios label{
+  background-color: transparent;
+  color: #473e2c;
+}
+
+form#uc-product-add-to-cart-form-21 label.option {
+  padding-right: 20px;
+  float: left;
+}
+
+form#uc-product-add-to-cart-form-21 .node-add-to-cart {
+  float: left;
+  clear: both;
+  margin-top: 9px;
+}
+
+.section-sponsors .view-display-id-page_1 .views-row {
+  text-align: center;
+  margin-left: 75px;
+}
+
+.not-front .view-sponsors .views-field-field-sponsor-image-fid {
+  background-color: #fff;
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 450px;
+}
+
+.node-type-sponsor h1 {
+  display: none;
+}
+
+.node-type-sponsor div.meta {
+  text-align: center;
+  background-color: #7893a4;
+  padding: 5px 0;
+  margin-bottom: 10px;
+}
+
+.node-type-sponsor div.meta a {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-style: normal;
+  color: #fff;
+  font-size: 18px;
+}
+
+.field-field-sponsor-image {
+  padding: 5px;
+  background-color: #fff;
+  float: left;
+  margin-top: 5px;
+}
+
+.field-field-sponsor-attendees {
+  clear: both;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding-top: 10px;
+}
+
+.field-field-sponsor-website {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding-top: 10px;
+  clear: both;
+}
+
+/* PROFILE */
+
+.profile dl {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.profile dl p {
+  margin-top: 0;
+}
+
+.profile .picture {
+  margin: 40px 2px 2px;
+}
+
+.profile .picture img {
+  border: 4px solid #7893a4;
+}
+
+#sidebar-right .block-drupalcamp a,
+#sidebar-right .block-profile a {
+  background-color: #36546a;
+  padding: 2px 5px;
+  color: #fff;
+  font-size: 12px;
+  display: block;
+  margin-left: -2px;
+}
+
+#sidebar-right .block-drupalcamp a:hover,
+#sidebar-right .block-profile a:hover {
+  color: #d06708;
+}
+
+#sidebar-right .block-drupalcamp .profile-img a,
+#sidebar-right .block-profile .profile-img a {
+  background-color: transparent;
+  padding: 3px;
+}
+
+/** closure **/
+#closure-blocks /* Wrapper for any blocks placed in the closure region */
+{
+}
+
+/** Drupal nodes **/
+.node /* Node wrapper */
+{
+}
+
+.node-inner /* Additional wrapper for node */
+{
+}
+
+.sticky /* A sticky node (displayed before others in a list) */
+{
+}
+
+.node-unpublished /* Unpublished nodes */
+{
+  /* background-color: #fff4f4; */ /* Drupal core uses a #fff4f4 background */
+}
+
+.node-unpublished div.unpublished, /* The word "Unpublished" displayed beneath the content. */
+.comment-unpublished div.unpublished
+{
+  height: 0;
+  overflow: visible;
+  color: #d8d8d8;
+  font-size: 75px;
+  line-height: 1;
+  font-family: Impact, "Arial Narrow", Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  word-wrap: break-word; /* A very nice CSS3 property */
+}
+
+.node-mine /* A node created by the current user */
+{
+}
+
+.node-teaser /* A node displayed as teaser */
+{
+}
+
+/* All nodes are given a node-type-FOO class that describes the type of
+ * content that it is. If you create a new content type called
+ * "my-custom-type", it will receive a "node-type-my-custom-type" class.
+ */
+
+.node-type-page /* Page content node */
+{
+}
+
+.node-type-story /* Story content node */
+{
+}
+
+.node h2.title /* Node title */
+{
+  font-weight: normal;
+  font-style: normal;
+}
+
+.marker /* "New" or "Updated" marker for content that is new or updated for the current user */
+{
+  color: #c00;
+}
+
+.node .picture /* The picture of the node author */
+{
+}
+
+.node.node-unpublished .picture,
+.comment.comment-unpublished .picture
+{
+  position: relative; /* Otherwise floated pictures will appear below the "Unpublished" text. */
+}
+
+.node .meta /* Wrapper for submitted and terms data */
+{
+}
+
+.node .submitted, .comment .submitted
+{
+  color: #537286;
+  padding: 5px 0 0;
+  font: bold .9em Georgia, "Times New Roman", Times, serif;
+}
+
+.node .submitted a
+{
+  color: #473e2c;
+}
+
+.node .terms /* Node terms (taxonomy) */
+{
+}
+
+.node .pane-content /* Node's content wrapper */
+{
+}
+
+.node div.links /* Wrapper for node links */
+{
+  margin: 1em 0;
+}
+
+ul.links
+{
+  margin: 0;
+  padding: 0;
+}
+
+ul.menu {
+  padding: 0;
+  margin-bottom: 0;
+}
+
+ul.links.inline
+{
+  display: inline;
+  padding: 0;
+  margin: 0;
+}
+
+ul.links li, li.leaf
+{
+  display: inline;
+  list-style-type: none;
+  padding: 0;
+}
+
+ul.tips li {
+  font: italic .9em Georgia, "Times New Roman", Times, serif;
+  list-style-position: inside;
+  padding: 0 0 5px;
+}
+
+ul.links.inline {
+  font: italic .9em Georgia, "Times New Roman", Times, serif;
+}
+
+.pane-content ul li {
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.preview .node /* Preview of the content before submitting new or updated content */
+{
+  /* background-color: #ffffea; */ /* Drupal core uses a #ffffea background */
+}
+
+ol {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+span.ext {
+  background-image: none;
+  padding: 0;
+}
+
+/** Drupal comments **/
+
+h2#comments-title {
+  background-color: #5f8eae;
+  padding: 5px 7px;
+  color: #fff;
+  font-size: 14px;
+  clear: both;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase;
+  margin: 5px -5px 10px;
+}
+
+#comments .box-inner h2.title {
+  background-color: #5f8eae;
+  padding: 5px 7px;
+  color: #fff;
+  font-size: 14px;
+  clear: both;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase;
+  margin: 5px -5px 10px;
+}
+
+#comment-form {
+  padding-bottom: 20px;
+}
+#comments /* Wrapper for the list of comments and its title */
+{
+  margin: 1em 0;
+}
+
+#comments-title /* Heading for the list of comments */
+{
+}
+
+.comment /* Wrapper for a single comment */
+{
+}
+
+.comment-inner h3
+{
+  background-color: transparent;
+  font-size: 18px;
+  padding: 10px 0 5px;
+}
+
+.comment-inner h3 a
+{
+  color: #473e2c;
+}
+
+.comment {
+  margin-bottom: 15px;
+}
+
+.comment-preview /* Preview of the comment before submitting new or updated comment */
+{
+}
+
+.comment.new /* A new comment since the user last viewed the page. */
+{
+}
+
+.comment.odd /* An odd-numbered comment in the list of comments */
+{
+}
+
+.comment.even /* An even-numbered comment in the list of comments */
+{
+}
+
+.comment.first /* The first comment in the list of comments */
+{
+}
+
+.comment.last /* The last comment in the list of comments */
+{
+}
+
+.comment-unpublished /* Unpublished comments */
+{
+  /* background-color: #fff4f4; */ /* Drupal core uses a #fff4f4 background */
+}
+
+.comment-unpublished div.unpublished /* The word "Unpublished" displayed beneath the content. See also the div.unpublished declaration in the node section above. */
+{
+}
+
+.comment-published /* Published comments */
+{
+}
+
+.comment-by-anon /* A comment created by an anonymous user */
+{
+}
+
+.comment-by-author /* A comment created by the node's author */
+{
+}
+
+.comment-mine /* A comment created by the current user */
+{
+}
+
+.comment h3.title /* Comment title */
+{
+}
+
+.comment .picture /* The picture of the comment author */
+{
+}
+
+.comment .submitted /* The "posted by" information */
+{
+  padding-top: 0;
+}
+
+.comment .pane-content /* Comment's content wrapper */
+{
+}
+
+.comment-inner /* Additional wrapper for a single comment */
+{
+  padding: 0 15px;
+  background-image: url(2011-images/bg-trans-white.png);
+  font-size: .9em;
+}
+
+.comment .user-signature /* The user's signature */
+{
+}
+
+.comment div.links /* Wrapper for comment links. See also the ul.links declaration in the node section above. */
+{
+  margin: 0 0 15px;
+  text-transform: uppercase;
+  font: .8em Georgia, "Times New Roman", Times, serif;
+}
+
+.comment div.links ul li
+{
+  margin-right: 10px;
+}
+
+.indented /* Nested comments are indented */
+{
+  /* margin-left: 25px; */ /* Drupal core uses a 25px left margin */
+}
+
+.preview .comment /* Preview of the comment before submitting new or updated comment */
+{
+  /* background-color: #ffffea; */ /* Drupal core uses a #ffffea background */
+}
+
+#comment-form label {
+  background-color: transparent;
+  color: #383938;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+/** Drupal blocks **/
+.block /* Block wrapper */
+{
+  margin-bottom: 1em;
+}
+
+/** Miscellaneous Drupal styles **/
+.error /* Errors that are separate from div.messages status messages (see above.) */
+{
+  /* color: #e55; */ /* Drupal core uses a #e55 background */
+}
+
+.warning /* Warnings that are separate from div.messages status messages (see above.) */
+{
+  /* color: #e09010; */ /* Drupal core uses a #e09010 background */
+}
+
+.more-link /* Aggregator, blog, and forum more link */
+{
+  text-align: right;
+}
+
+#user-login-form /* Drupal's default login form */
+{
+  text-align: left;
+}
+
+li a.active /* The active item in a Drupal menu */
+{
+  color: #000;
+}
+
+tr.even, tr.odd  {
+  background-color: transparent;
+  border: none;
+}
+
+.messages.status, .messages.error, div.messages.warning, .password-description.error, div.warning {
+  background-color: #FFF;
+  border: 1px solid #294F67;
+  color: #294f67;
+  font-style: italic;
+  background-image: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 9px;
+  margin: 10px 0;
+}
+
+.form-text.required.error {
+  border-width: 2px;
+  border-color: #7893a4;
+}
+
+.new, .password-result.error, span.error, .required.error {
+  color: #882a2a;
+  font-weight: bold;
+}
+
+span.ok {
+  color: #537286;
+  font: italic bold .9em Georgia, "Times New Roman", Times, serif;
+}
+
+/* TABS */
+
+ul.primary {
+  margin-left: 0;
+  padding-left: 0;
+  border-style: none;
+  background-image: none;
+  padding-bottom: 1px;
+}
+
+ul.primary li {
+  margin-right: 3px;
+
+}
+
+ul.primary li a {
+-webkit-border-top-left-radius: 4px;
+-webkit-border-top-right-radius: 4px;
+-moz-border-radius-topleft: 4px;
+-moz-border-radius-topright: 4px;
+border-top-left-radius: 4px;
+border-top-right-radius: 4px;
+  background-image: none;
+  background-color: #cf6706;
+  color: #fff;
+  padding-bottom: 2px;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+ul.primary li a:hover {
+  background-image: none;
+  background-color: #7893a4;
+  color: #fff;
+}
+
+ul.primary li a.active, ul.primary li a:hover.active {
+  background-image: none;
+  background-color: #383938;
+  color: #fff;
+}
+
+ul.primary li a:hover .tab, ul.primary li a .tab  {
+  background-image: none;
+}
+
+ul.primary li.active a .tab, ul.primary li.active a:hover .tab {
+  background-image: none;
+}
+
+ul.primary li.active a, ul.primary li.active a:hover {
+  background-image: none;
+}
+
+ul.tabs.secondary {
+  background-image: none;
+  border-bottom-style: none;
+  padding: 0;
+}
+
+ul.tabs.secondary a {
+  background-image: none;
+  border-style: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #cf6706;
+}
+
+ul.tabs.secondary a:hover {
+  color: #497492;
+  background-image: none;
+  border-style: none;
+}
+
+ul.tabs.secondary a.active, ul.tabs.secondary a:hover.active, ul.tabs.secondary li.active a.active span.tab {
+  color: #383938;
+  background-color: #fff;
+  background-image: none;
+}
+
+
+/** Drupal forms **/
+
+.form-submit {
+  background-color: #cf6706;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  padding: 4px 6px;
+  font: 14px Georgia, "Times New Roman", Times, serif;
+  border: 1px solid #b15818;
+}
+.form-item, /* Wrapper for a form element (or group of form elements) and its label */
+.form-checkboxes,
+.form-radios
+{
+  margin: 1em 0;
+}
+
+.form-item input.error, /* Highlight the form elements that caused a form submission error */
+.form-item textarea.error,
+.form-item select.error
+{
+  border: 2px solid #c00;
+}
+
+.form-item label /* The label for a form element */
+{
+  background-color: #5f8eae;
+  padding: 2px 7px;
+  color: #fff;
+  font-size: 12px;
+  clear: both;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase;
+  margin: 5px -5px 10px;
+}
+
+.form-item label.option /* The label for a radio button or checkbox */
+{
+  display: inline;
+  font-weight: normal;
+  background-color: transparent;
+  color: #497492;
+}
+
+.form-required /* The part of the label that indicates a required field */
+{
+  color: #c00;
+}
+
+.form-item .description /* The descriptive help text (separate from the label) */
+{
+  font-size: 0.85em;
+}
+
+.form-checkboxes .form-item, /* Pack groups of checkboxes and radio buttons closer together */
+.form-radios .form-item
+{
+  margin: 0.4em 0;
+}
+
+.form-submit /* The submit button */
+{
+}
+
+.container-inline div, .container-inline label /* Inline labels and form divs */
+{
+  display: inline;
+}
+
+.tips /* Tips for Drupal's input formats */
+{
+  margin: 0;
+  padding: 0;
+  font-size: 0.9em;
+}
+
+.form-required {
+  color: #882a2a;
+}
+
+.form-text {
+  padding: 7px 3px;
+  border: 1px solid #c1d5e6;
+  font: 1.1em Georgia, "Times New Roman", Times, serif;
+  color: #473e2c;
+}
+
+* {
+
+}
+
+input.form-autocomplete {
+  padding: 1px 3px;
+}
+
+.form-textarea {
+  padding: 7px 3px;
+  border: 1px solid #c1d5e6;
+  font: 1.1em Georgia, "Times New Roman", Times, serif;
+  color: #473e2c;
+}
+
+.grippie {
+  width: 567px;
+}
+
+fieldset {
+  border-style: none;
+  padding-bottom: 0;
+  margin-top: 0;
+}
+
+fieldset legend {
+  display: none;
+}
+
+fieldset .form-item {
+  margin-top: 0;
+}
+
+.description {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  padding-top: 5px;
+}
+
+/** OpenID **/
+/* The default styling for the OpenID login link seems to assume Garland's
+ * styling of list items.
+ */
+#user-login-form ul /* OpenID creates a new ul above the login form's links. */
+{
+  margin-bottom: 0; /* Position OpenID's ul next to the rest of the links. */
+}
+
+#user-login-form li.openid-link, /* The "Log in using OpenID" links. */
+#user-login li.openid-link
+{
+  margin-top: 1em;
+  margin-left: -20px;
+	background-position: left center;
+  margin-bottom: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#user-login-form li.user-link, /* The "Cancel OpenID login" links. */
+#user-login li.user-link
+{
+  margin-top: 1em;
+	list-style-type: disc;
+	list-style-position: outside;
+}
+
+#user-login li.openid-link, /* The OpenID links on the /user form. */
+#user-login li.user-link
+{
+  margin-left: -2em; /* Un-do all of the padding on the ul list. */
+}
+
+#user-login li.openid-processed, #edit-openid-identifier-wrapper {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/** Drupal admin tables **/
+/* We overrode these styles in html-elements.css, but restore them for the
+ * forms on the site.
+ */
+form tbody
+{
+  border-top: 1px solid #ccc;
+}
+
+form th
+{
+  text-align: left;
+  padding-right: 1em;
+}
+
+form tbody th
+{
+}
+
+form thead th
+{
+  text-align: left;
+  padding-right: 1em;
+  border-style: none;
+}
+
+/* HOMEPAGE */
+
+div#info-box
+{
+  width: 380px;
+  height: 270px;
+  background: url(2011-images/cta-main.gif) no-repeat;
+  overflow: hidden;
+  border-bottom: 3px solid #497492;
+}
+
+div#info-box .pane-content
+{
+  text-indent: -9999px;
+}
+
+div#info-box a {
+  display: block;
+  width: 380px;
+  height: 120px;
+}
+
+/* ATTENDEES */
+
+div#home-featured-attendees
+{
+  position: relative;
+  width: 540px;
+  height: 270px;
+  margin-left: 13px;
+  overflow: hidden;
+  background: url(2011-images/featured-attendees.png) no-repeat;
+  border-bottom: 3px solid #497492;
+}
+
+div#home-featured-attendees .views-field-value a
+{
+  color: #fff;
+}
+
+div#home-featured-attendees h2.pane-title
+{
+  margin: 0 15px 0 20px;
+  padding-top: 14px;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-left: 5px;
+}
+
+div#home-featured-attendees .hover-name {
+  position: absolute;
+  top: 15px;
+  right: 22px;
+  color: #FFFFFF;
+}
+
+div#home-featured-attendees .pane-content
+{
+  position: absolute;
+  top: 0;
+  left: 17px;
+  width: 525px;
+}
+
+#home-featured-attendees .view-display-id-block_1 {
+  position: relative;
+}
+
+#home-featured-attendees .prev,
+#home-featured-attendees .next {
+  display: block;
+  font-size: 14px;
+  position: absolute;
+  z-index: 200;
+  text-transform: uppercase;
+  top: 211px;
+  width: 50px;
+  text-align: center;
+  cursor: pointer;
+  padding: 12px 0 0;
+  color: #fff;
+  height: 31px;
+  letter-spacing: -1px;
+}
+
+#home-featured-attendees .prev {
+  right: 82px;
+  padding-right: 10px;
+}
+#home-featured-attendees .next {
+  right: 15px;
+  padding-right: 5px;
+}
+
+#home-featured-attendees .views-row {
+/*  display: none;*/
+  position: relative;
+  float: left;
+  width: 65px;
+  height: 290px;
+}
+
+#home-featured-attendees .views-row .views-field-value,
+#home-featured-attendees .views-row .views-field-value-1,
+#home-featured-attendees .views-row .views-field-picture {
+  display: none;
+}
+
+#home-featured-attendees .views-row .views-field-picture-2 {
+  position: absolute;
+  top: 38px;
+  padding-top: 7px;
+  cursor: pointer;
+}
+
+#home-featured-attendees .views-row .highlight {
+  position: absolute;
+  top: 36px;
+  left: 18px;
+  height: 34px;
+  width: 18px;
+  background: url(2011-images/highlight.png) no-repeat;
+}
+/* hide the highlight when someone clicks on the grey photo and pushes that item to first */
+#home-featured-attendees .views-row-first .highlight {
+  display: none;
+}
+
+#home-featured-attendees .views-row-first {
+  float: left;
+  width: 252px;
+  display: block;
+}
+
+#home-featured-attendees .views-row-first .views-field-picture {
+  display: block;
+  position: absolute;
+  top: 45px;
+}
+
+/* name */
+#home-featured-attendees .views-row-first .views-field-value-1 {
+  position: absolute;
+  top: 215px;
+  left: 8px;
+  display: block;
+  color: #333;
+  font-size: 16px;
+}
+
+#home-featured-attendees .views-row-first .views-field-value-1 a {
+  color: #fff;
+}
+
+/* slogan */
+
+#home-featured-attendees .views-row-first .views-field-value {
+  position: absolute;
+  top: 233px;
+  left: 8px;
+  display: block;
+  color: #fff;
+  font-size: 11px;
+}
+
+#home-featured-attendees .views-row-first .views-field-picture-2 {
+  display: none;
+}
+
+/* ATTENDEES PAGES */
+
+.view-id-attendees table.views-view-grid tr {
+  vertical-align: top;
+}
+
+.view-id-attendees table.views-view-grid tr td {
+  width: 150px;
+  height: 190px;
+  font: 12px Georgia, "Times New Roman", Times, serif;
+  align: center;
+  text-align: center;
+	padding: 0 0 10px;
+}
+
+.view-id-attendees table.views-view-grid .views-field-uid a {
+  font-size: 14px;
+  color: #473e2c;
+}
+.view-id-attendees table.views-view-grid .views-field-picture {
+  padding: 0 0 5px 6px;
+}
+
+.view-id-attendees table.views-view-grid img {
+  border: 4px solid #7893a4;
+}
+
+/* ATTENDEES BLOCK */
+#block-views-attendees-block_2 {
+  padding-left: 12px;
+}
+
+#block-views-attendees-block_2 h2.title
+{
+  padding: 3px 0 3px 5px;
+  margin-top: 12px;
+  margin-left: 13px;
+  margin-right: 13px;
+  font: 16px Georgia, "Times New Roman", Times, serif;
+  text-indent: -9999em;
+  overflow: hidden;
+}
+
+#block-views-attendees-block_2 .view-content {
+  padding: 5px 0 0;
+}
+
+#block-views-attendees-block_2 .views-row {
+  float: left;
+  margin-left: 2px;
+}
+
+#block-views-attendees-block_2 .views-row .views-field-picture {
+  margin-right: 0;
+  margin-bottom: -2px;
+}
+
+#block-views-attendees-block_2 .views-row img {
+  margin-right: 1px;
+  border: 1px solid #453b2f;
+  height: 60px;
+  width: 60px;
+}
+
+/* NEWS */
+
+div#home-featured-news .pane-content{
+  background: url(2011-images/icon-news.png) no-repeat 5px 5px;
+  height: 44px;
+}
+
+div#home-featured-news,
+div#home-twitter
+{
+  height:60px;
+  border-bottom: 3px solid #497492;
+  background-image: url(2011-images/bg-trans-white.png);
+}
+
+div#home-featured-news .pane-content,
+div#home-twitter .pane-content
+{
+  padding: 5px;
+}
+
+div#home-featured-news
+{
+  width: 620px;
+}
+
+div#home-featured-news a
+{
+  font-size: 1.3em;
+}
+
+div#home-featured-news .views-field-created
+{
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #497492;
+  font-weight: bold;
+}
+
+div#home-featured-news .pane-content
+{
+  padding-left: 80px;
+}
+
+.node-type-news h2.title {
+  margin-top: 10px;
+  font-size: 22px;
+}
+
+.view-news .node {
+  border-bottom: 1px solid #95bdd7;
+}
+
+.view-news.view-display-id-page_1 {
+  border-top: 1px solid #95bdd7;
+}
+
+#block-views-news-block_1 .views-row-last {
+  border-bottom: 1px dashed #5f8eae;
+  padding-bottom: 5px;
+}
+
+#block-views-news-block_1 a {
+  margin-bottom: 5px;
+}
+
+/* PROMOTE */
+
+.section-promote #content p {
+  float: left;
+  margin-right: 20px;
+}
+
+/* Twitter */
+
+div#home-twitter
+{
+  width: 300px;
+  margin-left: 13px;
+  position: relative;
+}
+
+div#home-twitter .pane-content
+{
+    background: url(2011-images/icon-twitter.png) no-repeat 231px 5px;
+  height: 50px;
+  padding-left: 8px;
+  margin-left: 0;
+}
+
+div#home-twitter a.twitter-link
+{
+  top: 0;
+  z-index: 20;
+  position: absolute;
+  display: block;
+  width: 280px;
+  height: 50px;
+  text-indent: -9999em;
+  overflow: hidden;
+}
+
+div#home-twitter .field-content
+{
+  padding-right: 70px;
+  overflow: hidden;
+  display: block;
+  height: 46px;
+  color: #668499;
+  font: 10px/1.5em Georgia, "Times New Roman", Times, serif;
+  margin-left: 0;
+  position: relative;
+  margin-top: -12px;
+}
+
+.view-tweets table td {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border-top: 1px solid #cbc8c5;
+  padding: 15px 0;
+}
+
+.view-tweets table td img {
+  display: none;
+}
+
+/* SIDEBAR CTAs */
+
+#block-block-6 .block-inner .content {
+  background: url(2011-images/cta-sidebar-session.gif) no-repeat;
+  height: 80px;
+  position: relative;
+}
+
+#block-block-6 .block-inner .content p {
+  display: inline;
+  line-height: 0;
+}
+
+#block-block-6 .block-inner .content a {
+  display: block;
+  position: absolute;
+  width: 270px;
+  height: 80px;
+  text-indent: -9999em;
+  overflow: hidden;
+  z-index: 40;
+}
+
+#block-block-5 .block-inner .content {
+  background: url(2011-images/cta-sidebar-promote.gif) no-repeat;
+  height: 80px;
+  position: relative;
+}
+
+#block-block-5 .block-inner .content p {
+  display: inline;
+  line-height: 0;
+}
+
+#block-block-5 .block-inner .content a {
+  display: block;
+  position: absolute;
+  width: 270px;
+  height: 80px;
+  text-indent: -9999em;
+  overflow: hidden;
+  z-index: 40;
+}
+
+#block-block-7 .block-inner .content {
+  background: url(2011-images/cta-sidebar-sponsor.gif) no-repeat;
+  height: 80px;
+  position: relative;
+}
+
+#block-block-7 .block-inner .content p {
+  display: inline;
+  line-height: 0;
+}
+
+#block-block-7 .block-inner .content a {
+  display: block;
+  position: absolute;
+  width: 270px;
+  height: 80px;
+  text-indent: -9999em;
+  overflow: hidden;
+  z-index: 40;
+}
+
+
+/* Node Forms */
+
+#field_session_copresenter_values tr th,
+#field-sponsor-attendees-items tr th {
+  font-family: "Trebuchet MS", "Lucida Grande", Lucida, Verdana, sans-serif;
+  border-style: none;
+
+  /* styles from .form-item label */
+  background-color: #5f8eae;
+  padding: 2px 7px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.form-item-wrapper {
+  border-bottom: 1px dashed #bcb9b6;
+  padding-right: 100px;
+  margin-right: 5px;
+}
+
+.form-item-wrapper.image-upload div.filefield-element {
+  margin: 5px 0 0;
+}
+
+.form-item-wrapper.image-upload div.filefield-element .form-item {
+  margin: 5px 0 0;
+}
+
+.form-item-wrapper.attendees-wrapper
+{
+  padding-bottom: 20px;
+}
+
+.form-item-wrapper.description-wrapper
+{
+  padding: 10px 0 0;
+  margin-bottom: 15px;
+}
+
+#session-node-form {
+
+}
+
+#session-node-form .form-checkboxes .form-item {
+  margin-top: 3px;
+}
+
+#session-node-form label.option {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#session-node-form select {
+  width: 100px;}
+
+#better-select-edit-taxonomy-4, #better-select-edit-taxonomy-5 {
+  float: left;
+}
+
+#better-select-edit-taxonomy-5 {
+  width: 300px;
+}
+
+#better-select-edit-taxonomy-4 {
+  padding-right: 50px;
+}
+
+#edit-taxonomy-tags-3-wrapper {
+  clear: both;
+}
+
+#session-node-form fieldset {
+  padding: 0;
+}
+
+/* Autocompleters width */
+#field_session_copresenter_values input,
+#field_sponsor_attendees_values input {
+  width: 300px;
+  padding: 2px;
+  font-size: 14px;
+}
+
+/* Filefield previews */
+.filefield-element .imagefield-preview {
+  min-height: 30px;
+  min-width: 100px;
+}
+
+#session-node-form .tips,
+#sponsor-node-form .tips {
+  margin-left: 15px;
+}
+
+/* non-submit buttons */
+input#edit-field-sponsor-image-0-filefield-remove,
+input#edit-field-sponsor-image-0-filefield-upload,
+input#edit-field-sponsor-attendees-field-sponsor-attendees-add-more,
+input.teaser-button {
+  padding: 5px;
+  background-color: #7893a4;
+  border: 1px solid #5d7280;
+  font: 12px Georgia, "Times New Roman", Times, serif;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+
+/* Sponsor Nodes */
+div.sponsor-cta {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+div.node-type-sponsor .sponsor-info {
+  float: left;
+  width: 340px;
+}
+
+div.node-type-sponsor .attendees {
+  float: right;
+  width: 240px;
+}
+
+.node-type-session .field-field-session-copresenter .field-item,
+div.node-type-sponsor .attendee {
+  width: 80px;
+  float: left;
+  text-align: center;
+}
+
+.node-type-session .field-field-session-copresenter .username,
+div.node-type-sponsor .attendee .username {
+  display: none;
+}
+
+div.node-type-sponsor .sponsor-links {
+  text-align: center;
+}
+
+/* CART */
+
+#uc-cart-checkout-form .line-items-div {
+  display: none;
+}
+
+.cart-review {
+  border-style: none;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+form th {
+  border-bottom-style: none;
+  padding-bottom: 5px;
+}
+
+.solid-border {
+  border-style: none;
+}
+
+#checkout-form-bottom {
+  border-style: none;
+  text-align: left;
+}
+
+#uc-cart-checkout-form fieldset {
+  margin-bottom: 0;
+}
+
+.order-review-table {
+  border-style: none;
+}
+
+.order-review-table td {
+  border-style: none;
+  padding: 6px;
+  text-align: left;
+}
+
+.order-review-table tr.pane-title-row td {
+  border-style: none;
+  padding: 5px;
+  text-align: left;
+  font: normal normal 18px "Trebuchet MS", "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+
+.order-review-table td.title-col {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.order-review-table td.data-col {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+.order-review-table .pane-title-row {
+  background-color: #cad0ce;
+  border-style: none;
+}
+
+.order-review-table .row-border-top {
+  border-style: none;
+}
+
+.order-review-table .uc-price {
+  border-style: none;
+  font-weight: bold;
+  color: #882a2a;
+}
+
+.order-review-table .review-button-row {
+  background-color: transparent;
+  border-style: none;
+  border-top: 2px solid #cad0ce;
+}
+
+/** Schedule **/
+body.section-schedule .node {
+  min-height: 100px;
+  position: relative;
+}
+
+table.sticky-header {
+  z-index: 100;
+}
+
+body.section-schedule th {
+  text-align: center;
+}
+
+body.section-schedule td {
+  vertical-align: top;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 11px;
+  width: 12.5%;
+}
+
+body.section-schedule .title a {
+	color: #ad2024;
+}
+
+
+.content ul + ul {
+  margin-top:0; /* fix bug with Textile markup in input filter, where it adds an extra ul on last list item  */
+  }
+
+
+table#field_session_copresenter_values,
+table#field_session_link_values {
+  width:560px;
+  clear:both;
+  margin-left: -5px;
+  }
+
+table#field_session_link_values .tableHeader-processed {
+  display:none;
+  }
+
+table#field_session_copresenter_values tbody,
+table#field_session_link_values tbody {
+  border-top:medium none;
+  }
+
+table#field_session_copresenter_values td.content-multiple-drag,
+table#field_session_link_values td.content-multiple-drag,
+table#field_session_link_values td.content-multiple-drag a {
+  width: 13px;
+  position:relative;
+  text-decoration:none;
+  top:15px;
+  margin:0;
+  padding:0;
+  }
+
+table#field_session_copresenter_values .form-item,
+table#field_session_link_values .form-item {
+  width:auto;
+}
+
+table#field_session_link_values .link-field-url label {
+  margin-right:-10px;
+  }
+table#field_session_link_values .link-field-title label {
+  margin-left:-13px;
+  }
+table#field_session_link_values .description {
+  padding-bottom:5px;
+}
+table#field_session_link_values div.link-field-column .form-text {
+  width:99%
+  }
+
